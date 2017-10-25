@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tableizer - Asyncronous Table Generator</title>
+</head>
+<body>
+  <h1>Table</h1>
+  <div id="tableizer"></div>
+  <table class="table-loader">
+    <caption>Table</caption>
+    <thead><tr></tr></thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="./bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
+  <script src="./bower_components/lodash/dist/lodash.min.js" type="text/javascript"></script>
+  <script src="./src/tableizer.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('table-loader').tableizer({
+        url: './src/airfields.json',
+        columns : [
+          {'head':'Name', 'data':'Name'}
+        ]
+      });
+      $('tableizer');
+    });
+  </script>
+</body>
+</html>

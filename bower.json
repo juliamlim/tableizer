@@ -1,0 +1,23 @@
+{
+  "version": "0.0.0",
+  "name": "tableizer",
+  "authors": [
+    "Julia Lim <juliamlim@hotmail.com>"
+  ],
+  "description": "Async jQuery library that auto generates tables using json data.",
+  "main": "./index.html",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "jQuery": "^3.2.1",
+    "jquery-ui": "^1.12.1"
+  }
+}
